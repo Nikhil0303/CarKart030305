@@ -77,7 +77,8 @@
 						<div class="control-group">
 							  <label class="control-label">Price</label><form:errors path="itemPrice" cssStyle="color: #ff0000;" />
 								<div class="controls docs-input-sizes">
-								 <form:input path="itemPrice" id="price" class="form-Control"/>
+								 <form:input type="number" min="50" path="itemPrice" id="price" class="form-Control"/>
+								
 								</div>
 						</div>
 						
@@ -97,7 +98,7 @@
 								</div>
 						</div>
 						<div class="span2 no_margin_left">
-						 <input type="submit" value="Submit" class="btn btn-primary pull-left"  />
+						 <input type="submit" value="Submit" class="btn btn-info pull-left"  />
 						 </div>
 						 <div class="span1 no_margin_left">
 					 	<a href="<c:url value="/admin/partsinventory" />" class="btn btn-danger">Cancel</a>

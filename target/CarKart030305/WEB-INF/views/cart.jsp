@@ -22,20 +22,21 @@
 			  </tr>
 			</thead>
 			<tbody>
-				<tr data-ng-repeat = "items in cartItems">
-					 	<td class="span1"><img src="<c:url value="/resources/images/{{items.item.itemId}}.jpg" /> " alt="image"/></td>
-						<td>{{items.Item.itemName}}</td>
-						<td>{{items.Item.itemPrice}}</td>
-						<td>{{items.quantity}}</td>
+				<tr data-ng-repeat = "items in cart.cartItems">
+					 	<td class="span1"><img src="<c:url value="/resources/images/{{items.item.itemId}}.png" /> " alt="image"/></td>
+						<td>{{items.item.itemId}}</td>
+						<td>{{items.item.itemName}}</td>
+						<td>{{items.item.itemPrice}}</td>
+						<td>{{items.Quantity}}</td>
 						<td>{{items.totalPrice}}</td>
 						<td><a href="#" class="btn btn-danger btnAction" data-ng-click="removeItemFromCart(items.item.itemId)">
 							<span class="glyphicon glyphicon-remove"></span>remove</a></td>
 					</tr>
 			  <tr>
-                    <td>{{itemName}}</td>
+                    <td>{{items.item.itemName}}</td>
                     <td></td>
 					<td></td>
-                    <td>Grand Total(in Rs.)</td>
+                    <td>{{cartItem.getQuantity()}}</td>
                     <td>{{GrandTotalOfItems()}}</td>
                     <td></th>
                 </tr>	  
@@ -46,7 +47,7 @@
 
           <div class="row">
 		  <div class="span3">
-             <a href="<spring:url value="/" />" class="btn btn-primary center">Continue Shopping</a>
+             <a href="<spring:url value="/" />" class="btn btn-info center">Continue Shopping</a>
 			</div>	
 			<div class="span3">
              <a href="<spring:url value="/order/${cartId}"/>"

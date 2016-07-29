@@ -41,14 +41,14 @@
 						<div class="span6">
 							<div class="span4 no_margin_left">
 									<p data-ng-controller="addToCartCtrl">
-									<a href="<c:url value="${url}" />" class="btn btn-primary">Back</a>
+									<a href="<c:url value="${url}" />" class="btn btn-info">Back</a>
 									<c:if test="${pageContext.request.userPrincipal.name  != 'admin'}">
-										<a href="#" class="btn btn-primary"
+										<a href="#" class="btn btn-info"
 										   data-ng-click="addItemToCart('${item.itemId}')"><span
 												class="glyphicon glyphicon-shopping-cart"></span>Add to cart
 											</a>
 										<a href="<spring:url value="/user/cart" />"
-										   class="btn btn-primary"><span class="glyphicon glyphicon-hand-right"></span>View Cart</a>
+										   class="btn btn-info"><span class="glyphicon glyphicon-hand-right"></span>View Cart</a>
 									</c:if>
 								</p>
 							</div>	

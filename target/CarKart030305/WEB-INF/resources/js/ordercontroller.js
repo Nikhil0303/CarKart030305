@@ -19,7 +19,7 @@ cartApp.controller("addToCartCtrl", function ($scope, $http){
      * removeItemFromCart method is used to remove a item from the cart
      */
     $scope.removeItemFromCart = function (itemId) {
-        $http.put('http://localhost/CarKart030305/usercart/cart/removeItem/'+itemId).success(function (data) {
+        $http.get('http://localhost/CarKart030305/usercart/cart/removeItem/'+itemId).success(function (data) {
             $scope.refreshCartItems();
         });
     };
@@ -51,6 +51,7 @@ cartApp.controller("addToCartCtrl", function ($scope, $http){
 	 * refreshCartItems method is called by others methods in same controller to refresh the cart
 	 */
     $scope.refreshCartItems = function () {
+    	
         $http.get('http://localhost/CarKart030305/usercart/cart/refreshCart/'+$scope.cartId).success(function (data) {
            $scope.cart=data;
         });

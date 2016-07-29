@@ -25,6 +25,7 @@ public class CartDaoImpl implements CartDao{
 
     public Cart getCartById (int cartId) {
         Session session = sessionFactory.getCurrentSession();
+        System.out.println("Cart Id inside daoimpl = "+cartId);
         return (Cart) session.get(Cart.class, cartId);
     }
 

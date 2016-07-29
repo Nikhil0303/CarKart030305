@@ -21,10 +21,10 @@
 						  <ul class="nav pull-right">
 							   <li class="divider-vertical"></li>
 							   <c:if test="${pageContext.request.userPrincipal.name != null}">
-								<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
+								<c:if test="${pageContext.request.userPrincipal.name != 'nik'}">
 									<li><a href="<c:url value="/user/cart" />">Cart</a></li>
 								</c:if>
-								<c:if test="${pageContext.request.userPrincipal.name  != 'user'}">
+								<c:if test="${pageContext.request.userPrincipal.name  == 'nik'}">
 									 <li><a href="<c:url value="/admin/partsinventory" />">View Inventory</a></li>
 									 <li><a href="<c:url value="/admin/user" />">View Customer</a></li>
 								</c:if>

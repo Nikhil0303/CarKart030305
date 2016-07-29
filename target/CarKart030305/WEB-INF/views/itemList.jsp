@@ -1,4 +1,5 @@
-<div class="span12 popular_products">
+
+<div class="span11 popular_products">
 				 <h3>Popular products</h3><br>
 				<ul class="thumbnails">
 				
@@ -32,3 +33,4 @@
 		<%@include file="/WEB-INF/views/sidebar.jsp"%>
 		
 		
+	

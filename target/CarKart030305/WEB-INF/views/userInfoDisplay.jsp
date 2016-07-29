@@ -77,7 +77,7 @@
 					  </div>
 					  <div class="span2 no_margin_left">
 					  <input type="hidden" name="_flowExecutionKey" />
-						<input type="submit" value="Continue" class="btn btn-primary pull-left" name="_eventId_userInfoProcessCompleted" />
+						<input type="submit" value="Continue" class="btn btn-info pull-left" name="_eventId_userInfoProcessCompleted" />
 						 </div>
 						 <div class="span1 no_margin_left">
 					 	<button class="btn btn-danger pull-left " name="_eventId_cancel">Cancel</button>

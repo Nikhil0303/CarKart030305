@@ -27,8 +27,8 @@
                     <td>${items.itemCategory}</td>
                     <td>${items.itemDescription}</td>
                     <td>${items.itemPrice}</td>
-                    <td ><a href="<spring:url value="/parts/showitem/${items.itemId}" />" class="btn btn-primary btnAction" >View</a>
-                    	<a href="<spring:url value="/admin/item/editItem/${items.itemId}" />" class="btn btn-primary btnAction"> Edit</a>
+                    <td ><a href="<spring:url value="/parts/showitem/${items.itemId}" />" class="btn btn-info btnAction" >View</a>
+                    	<a href="<spring:url value="/admin/item/editItem/${items.itemId}" />" class="btn btn-info btnAction"> Edit</a>
                         <a href="<spring:url value="/admin/item/deleteItem/${items.itemId}" />" class="btn btn-danger btnAction" >Delete</a>
                     </td>
                 </tr>
@@ -37,7 +37,7 @@
 		  </table>
 
 		  <div class="span3">
-             <a href="<spring:url value="/admin/item/addItem" />" class="btn btn-primary">Add Product</a>
+             <a href="<spring:url value="/admin/item/addItem" />" class="btn btn-info">Add Product</a>
 			</div>	
 			</div>	
 			</div>  

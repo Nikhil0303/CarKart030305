@@ -27,7 +27,7 @@
 						</div>
 						</div>
 				<div class="span8 center">
-                <input type="submit" value="Submit" class="btn btn-primary">
+                <input type="submit" value="Submit" class="btn btn-info">
 				
              <a href="<spring:url value="/" />" class="btn btn-danger margin-left25">Cancel</a>
 			</div>

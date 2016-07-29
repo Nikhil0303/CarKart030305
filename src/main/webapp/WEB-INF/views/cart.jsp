@@ -14,29 +14,30 @@
 			  <tr>
 				
 				<th>Image</th>
-				<th class="width110">Product</th>
-				<th >Unit Price</th>
-				<th>Quantity</th>
+				<th class="width110">Product ID</th>
+				<th >Product Name</th>
 				<th>Price(in Rs.)</th>
-				<th>Action</th>
+				<th>Quantity</th>
+				<th>Total Price Of quantities of a Product</th>
 			  </tr>
 			</thead>
 			<tbody>
-				<tr data-ng-repeat = "items in cartItems">
-					 	<td class="span1"><img src="<c:url value="/resources/images/{{items.item.itemId}}.jpg" /> " alt="image"/></td>
-						<td>{{items.Item.itemName}}</td>
-						<td>{{items.Item.itemPrice}}</td>
-						<td>{{items.Quantity}}</td>
+				<tr data-ng-repeat = "items in cart.cartItems">
+					 	<td class="span1"><img src="<c:url value="/resources/images/{{items.item.itemId}}.png" /> " alt="image"/></td>
+						<td>{{items.item.itemId}}</td>
+						<td>{{items.item.itemName}}</td>
+						<td>{{items.item.itemPrice}}</td>
+						<td>{{items.quantity}}</td>
 						<td>{{items.totalPrice}}</td>
 						<td><a href="#" class="btn btn-danger btnAction" data-ng-click="removeItemFromCart(items.item.itemId)">
 							<span class="glyphicon glyphicon-remove"></span>remove</a></td>
 					</tr>
 			  <tr>
-                    <td>{{items.Item.itemName}}</td>
+                    <td>{{items.item.itemName}}</td>
                     <td></td>
 					<td></td>
-                    <td>{{cartItem.getQuantity()}}</td>
-                    <td>{{GrandTotalOfItems()}}</td>
+                    <td>{{cartItem.getquantity()}}</td>
+                    <td>Grand Total : {{GrandTotalOfItems()}}</td>
                     <td></th>
                 </tr>	  
 			</tbody>

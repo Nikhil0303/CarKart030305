@@ -5,7 +5,7 @@
 	 
 	<h1> Invalid Cart</h1><br>
                 <div class="span5">
-             <a href="<spring:url value="/parts/allItems" />" class="btn btn-primary">Continue Shopping</a>
+             <a href="<spring:url value="/parts/allItems" />" class="btn btn-info">Continue Shopping</a>
 			</div>	
 </div>
 

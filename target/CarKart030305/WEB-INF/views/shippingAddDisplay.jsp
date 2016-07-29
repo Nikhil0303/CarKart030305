@@ -54,11 +54,11 @@
 						</div>
 					  </div>
 					  <div class="span1 no_margin_left">
-					 	 <button class="btn btn-primary" name="_eventId_backTouserInfoProcess">Back</button>
+					 	 <button class="btn btn-info" name="_eventId_backTouserInfoProcess">Back</button>
 					    </div>
 					  <div class="span1 ">
 					  <input type="hidden" name="_flowExecutionKey" />
-						<input type="submit" value="Next" class="btn btn-primary" name="_eventId_shippingAddProcessCompleted" />
+						<input type="submit" value="Next" class="btn btn-info" name="_eventId_shippingAddProcessCompleted" />
 						 </div>
 						 <div class="span1 margin-left10">
 					 	<button class="btn btn-danger" name="_eventId_cancel">Cancel</button>

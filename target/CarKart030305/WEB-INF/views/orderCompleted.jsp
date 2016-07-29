@@ -8,7 +8,7 @@
 
                     <p>Your order will be shipped with in three business days!</p>
                 <div class="span5">
-             <a href="<spring:url value="/" />" class="btn btn-primary">Ok</a>
+             <a href="<spring:url value="/" />" class="btn btn-info">Ok</a>
 			</div>	
 </div>
 

@@ -41,9 +41,12 @@ public class CartManagementController {
     private ItemService itemService;
 
     @RequestMapping("/refreshCart/{cartId}")
-    public @ResponseBody
-    Cart getCartById (@PathVariable(value = "cartId") int cartId) {
-        return cartService.getCartById(cartId);
+    public @ResponseBody Cart getCartById (@PathVariable(value = "cartId") int cartId) {
+  
+      
+    	Cart c=cartService.getCartById(cartId);
+    	System.out.println(c.getGrandTotal());
+    	return c;
     }
     /*
      * addItem method is used to add a item in user cart.
@@ -83,9 +86,10 @@ System.out.println("Hello Cart Management Controller");
     /*
      * removeItem method is used to remove a item from user cart.
      */
-    @RequestMapping(value = "/removeItem/{itemId}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/removeItem/{itemId}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void removeItem (@PathVariable(value = "itemId") int itemId) {
+    	System.out.println("cart item id = "+itemId);
         CartItem cartItem = cartItemService.getCartItemByItemId(itemId);
         cartItemService.removeCartItem(cartItem);
 

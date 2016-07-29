@@ -93,7 +93,7 @@
 								</div>
 						</div>
 						<div class="span2 no_margin_left">
-						 <input type="submit" value="Submit" class="btn btn-primary pull-left"  />
+						 <input type="submit" value="Submit" class="btn btn-info pull-left"  />
 						 </div>
 						 <div class="span1 no_margin_left">
 					 	<a href="<c:url value="/admin/partsinventory" />" class="btn btn-danger">Cancel</a>

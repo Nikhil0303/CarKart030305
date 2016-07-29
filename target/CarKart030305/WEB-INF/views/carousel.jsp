@@ -15,7 +15,7 @@
 				  </div>
 
 				  <div class="item">
-					<img src="<c:url value="/resources/images/5120x1080.jpg"/>" alt=""/>
+					<img src="<c:url value="/resources/images/5120x2160.jpg"/>" alt=""/>
 				  </div>
 				</div>
 

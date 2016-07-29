@@ -27,6 +27,7 @@ public class CartItemDaoImpl implements CartItemDao{
     }
 
     public void removeCartItem (CartItem cartItem) {
+    	System.out.println("Remove Cart Item"+cartItem.getCartItemId());
         Session session = sessionFactory.getCurrentSession();
         session.delete(cartItem);
         session.flush();
@@ -42,10 +43,9 @@ public class CartItemDaoImpl implements CartItemDao{
 
     public CartItem getCartItemByItemId (int itemId) {
         Session session = sessionFactory.getCurrentSession();
-        Query query = session.createQuery("from CartItem where itemId = ?");
-        query.setInteger(0, itemId);
-        session.flush();
-
+        Query query = session.createQuery("from CartItem where itemId=:id");
+        query.setParameter("id", itemId);
+        
         return (CartItem) query.uniqueResult();
     }
 }

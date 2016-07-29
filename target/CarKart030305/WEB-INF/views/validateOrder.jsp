@@ -83,11 +83,11 @@
                         </div>
                         
                         <div class="span3 center">
-					 	 <button class="btn btn-primary" name="_eventId_backToShippingAddProcess">Back</button>
+					 	 <button class="btn btn-info" name="_eventId_backToShippingAddProcess">Back</button>
 					    </div>
 					  <div class="span3 center ">
 					  <input type="hidden" name="_flowExecutionKey" />
-						<input type="submit" value="Submit Order" class="btn btn-primary"
+						<input type="submit" value="Submit Order" class="btn btn-info"
                                name="_eventId_validateOrderProcessCompleted"/>
 						 </div>
 						 <div class="span2 center ">

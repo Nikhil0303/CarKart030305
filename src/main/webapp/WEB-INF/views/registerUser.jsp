@@ -11,7 +11,7 @@
 					<h3>Registration Form</h3>
 					</div>
 				   
-				  <div class="span3 no_margin_left">
+				  <div class="span3 no_margin_left" required="true">
 						<legend>Your Personal Details</legend>
 					  <div class="control-group">
 						<label class="control-label">Name</label><form:errors path="userFullName" cssStyle="color: #ff0000"/>
@@ -23,13 +23,13 @@
 						<label class="control-label">Email</label><span style="color: #ff0000">${emailMsg}</span>
 						   <form:errors path="userEmail" cssStyle="color: #ff0000"/>
 						<div class="controls docs-input-sizes">
-						  <form:input path="userEmail" id="email" class="form-Control"/>
+						  <form:input type="email" name="email" path="userEmail" id="email" class="form-Control"/>
 						</div>
 					  </div>					  
 					  <div class="control-group">
 						<label class="control-label">Phone</label>
 						<div class="controls docs-input-sizes">
-						  <form:input path="userPhone" id="phone" class="form-Control"/>
+						  <form:input type="number" path="userPhone" id="phone" class="form-Control " size="10"/>
 						</div>
 					  </div>
 					<div class="control-group">

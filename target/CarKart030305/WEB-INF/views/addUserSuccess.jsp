@@ -5,7 +5,7 @@
 	 
 	<h3> You have registered successfully.</h3><br>
                 <div class="span5">
-             <a href="<spring:url value="/" />" class="btn btn-primary">Continue Shopping</a>
+             <a href="<spring:url value="/" />" class="btn btn-info">Continue Shopping</a>
 			</div>	
 </div>
 

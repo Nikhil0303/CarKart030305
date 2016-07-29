@@ -138,7 +138,7 @@
 					  				  
 					  </div>
 					  <div class="span8 center">
-					  			<input type="submit" value="submit" class="btn btn-primary"  />
+					  			<input type="submit" value="submit" class="btn btn-info"  />
 							  <a href="<c:url value="/" />" class="btn btn-danger margin-left25">Cancel</a>
 								</div>
 								</form:form>
